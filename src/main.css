@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+/* criando variáveis para as cores */
+:root {
+  --white: #ffffff;
+  --yellow-soft: #fef6e4;
+  --purple-700: #232946;
+  --purple-400: #A5B1EE;
+  --purple-300: #B8C1EC;
+  --pink-300: #EEBBC3;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+  --green-300: #00837f;
+  --green-500: #00875f;
+  --red-500: #F75A68
+}
+
+/* :focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--yellow-soft);
+  color: var(--gray-600);
+  /* cria uma padronização entre alguns navegadores para deixar 
+  as fontes mais finas (principalmente se não estiver usando 
+  a fonte padrão do sistema */
+  --webkit-font-smoothing: antialiased;
+}
+
+/* importante selecionar os outros elementos, não só o body, porque
+eles não herdam as estilizações do body */
+body, input, textarea, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  /* priorize utilizar rem (unidade relativa, para facilitar a acessibilidade)
+  1rem === 16px */
+  font-size: 1rem
+}
