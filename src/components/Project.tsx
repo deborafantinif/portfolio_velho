@@ -1,23 +1,26 @@
 import styles from './Project.module.css';
-import feedGet from '../assets/feedget.jpg';
 
-function Project() {
+interface IProjectProps {
+  github: string,
+  site: string,
+  title: string,
+  description: string,
+  image: string,
+}
+
+function Project(props: IProjectProps) {
   return (
-    <div className={styles.bloco}>
-      <img src={feedGet} alt="tela do projeto feedget" />
-      <div className={styles.content}>
-        <h2>Feedget</h2>
-        <p>Formulário de feedback em formato de chat</p>
-        <div className={styles.button}>
-          <button>
-            SITE
-          </button>
-          <button>
-            REPOSITÓRIO
-          </button>
+      <div className={styles.bloco}>
+        <img src={props.image} alt="tela do projeto feedget" />
+        <div className={styles.content}>
+          <h2>{props.title}</h2>
+          <p>{props.description}</p>
+          <div className={styles.button}>
+            <a href={props.site} target='_blank'>SITE</a>
+            <a href={props.github} target='_blank'>REPOSITÓRIO</a>
+          </div>
         </div>
       </div>
-    </div>
   );
 }
 
