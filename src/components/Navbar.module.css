@@ -1,0 +1,28 @@
+.navbar {
+  background: var(--purple-400);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bloco {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bloco Link, .bloco a {
+  padding: 1.25rem;
+}
+
+.bloco Link:hover, .bloco a:hover {
+  background: var(--pink-300);
+  color: var(--gray-700);
+}
