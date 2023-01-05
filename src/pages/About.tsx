@@ -17,8 +17,7 @@ function About() {
             Iniciei meus estudos no início de 2021 entrando no curso de Análise 
             e Desenvolvimento de Sistemas na FIAP e tranquei o curso no final 
             do segundo semestre. Posteriormente ingressei no curso de 
-            Desenvolvimento Web na Trybe, onde ainda estou estudando e concluo
-            em julho de 2022.
+            Desenvolvimento Web na Trybe, onde conclui em dezembro de 2022.
           </p>
           <p>
             Hoje estou em busca de uma oportunidade para poder aplicar tudo que 
