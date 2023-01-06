@@ -2,6 +2,7 @@ import NavBar from '../components/NavBar';
 import Project from '../components/Project';
 import styles from './Projects.module.css';
 import ghibli from '../assets/ghibli.png';
+import todo from '../assets/todo.png';
 import feedget from '../assets/feedget.png';
 import pixelArt from '../assets/pexelArt.jpg';
 
@@ -13,6 +14,16 @@ function Projects() {
       <main className={styles.main}>
         <h1>Projetos</h1>
         <div className={styles.blocos}>
+        <Project 
+            github='https://github.com/deborafantinif/todo'
+            site='https://todo-deborafantinif.vercel.app/'
+            title='Todo'
+            description='O Todo é um controlador de 
+            tarefas, onde se consegue criar, deletar e definir o status das 
+            tarefas.'
+            image={todo} 
+          />
+
           <Project 
             github='https://github.com/deborafantinif/project-pixels-art'
             site='https://pixels-art-eight.vercel.app/'
